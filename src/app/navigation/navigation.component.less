@@ -1,0 +1,62 @@
+@import "../../styles.css";
+
+.logo{
+    height: auto;
+}
+
+.navigation-header li {
+	display: inline;
+ 
+}
+
+.navigation-links-hidden ul{
+	display: inherit;
+}
+
+.image-show-mobile{
+	display: none;
+}
+
+@media screen and (min-width: 0px) and (max-width: 479px) {
+	
+	.navigation-links-hidden ul{
+		display: none;
+	}
+
+	.image-show-mobile{
+		display: inline-block;
+		text-align: right;
+	}
+
+	.logo{
+		display: block;
+    	margin: 0 auto;
+	}
+
+	.hamburger{
+		position: relative;
+		top:-54px;
+	}
+
+	.navigation-header li {
+		display: inherit;
+	 
+	}
+
+}
+
+@media screen and (min-width: 480px) and (max-width: 639px) {
+	.logo{
+		display: block;
+    	margin: 0 auto;
+	}
+
+	.navigation-links{
+		text-align: center;
+	}	
+
+}
+
+@media screen and (min-width: 640px) {
+
+}

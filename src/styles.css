@@ -1,1 +1,140 @@
 /* You can add global styles to this file, and also import other style files */
+
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.float-right{
+	float: right
+}
+
+.float-left{
+	float: left
+}
+
+.object-center{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+@media screen and (min-width: 360px) {
+	
+	.header{ 
+		font-size: 20px;
+	}
+	.description{
+		font-size: 10px;
+	}
+
+	//Spacing
+	.spacerXSM{
+		margin-top: 0.62px; 
+	}
+
+	.spacerSM{
+		margin-top: 1.25px;
+	}
+
+	.spacerMD{
+		margin-top: 2.5px; 
+	}
+
+	.spacerLG{
+		margin-top: 3.75px;
+	}
+
+	.spacerXLG{
+		margin-top: 5px;
+	}
+
+	.spacerXXLG{
+		margin-top: 7.5px;
+	}
+
+}
+
+@media screen and (min-width: 480px) {
+	
+	.header{ 
+		font-size: 25px;
+	}
+	.description{
+		font-size: 15px;
+	}
+
+	//Spacing
+	.spacerXSM{
+		margin-top: 1.25px; 
+	}
+
+	.spacerSM{
+		margin-top: 2.5px; 
+	}
+
+	.spacerMD{
+		margin-top: 5px; 
+	}
+
+	.spacerLG{
+		margin-top: 7.5px; 
+	}
+
+	.spacerXLG{
+		margin-top: 10px;
+	}
+
+	.spacerXXLG{
+		margin-top: 15px;
+	}
+
+}
+
+@media screen and (min-width: 640px) {
+	
+	.header{ 
+		font-size: 30px; 
+	}
+	.description{
+		font-size: 20px;
+	}
+
+
+	//Spacing
+	.spacerXSM{
+		margin-top: 2.5px; 
+	}
+
+	.spacerSM{
+		margin-top: 5px;
+	}
+
+	.spacerMD{
+		margin-top: 10px; 
+	}
+
+	.spacerLG{
+		margin-top: 15px;
+	}
+
+	.spacerXL{
+		margin-top: 20px;
+	}
+
+	.spacerXXL{
+		margin-top: 30px;
+	}
+
+
+}
+
+
+
+
+

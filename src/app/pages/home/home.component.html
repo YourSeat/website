@@ -1,0 +1,417 @@
+<!-- COMPONENT: Container Primary --> 
+<div class="container-primary container-odd">  
+
+		<!-- COMPONENT: Navigation --> 
+		<div class="container">
+
+		      <div class="row">
+
+		      	<div class="spacerXLG navigation-header">
+
+				          <div class="col-lg-7 col-md-6">
+				              <img class="logo img-responsive" [src]="dummy">
+				              <img (click)="show = !show" class="image-show-mobile float-right hamburger" [src]="hamburger"> 
+				          </div> <!-- end of col-xs-1 -->
+
+				          <div class="col-lg-5 col-md-6 navigation-links navigation-links-hidden">
+				          	<ul class="">
+				          		<li><a href="">HOW IT WORKS</a></li>
+				          		<li><a href="">PRICING</a></li>
+				          		<li>
+				          			<button type="button" class="btn">
+				          				LOGIN
+				          			</button> <!-- end of btn -->
+				          		</li>
+				          		<li>
+				          			<button type="button" class="btn">
+				          				REQUEST AN INVITE
+				          			</button> <!-- end of btn -->
+				          		</li>          		
+				          	</ul>
+				          </div> <!-- end of col-xs-3 col-xs-offset-3 -->
+
+						<div *ngIf="show" class="col-lg-5 navigation-links">
+				          	<ul class="">
+				          		<li><a href="">HOW IT WORKS</a></li>
+				          		<li><a href="">PRICING</a></li>
+				          		<li>
+				          			<button type="button" class="btn">
+				          				LOGIN
+				          			</button> <!-- end of btn -->
+				          		</li>
+				          		<li>
+				          			<button type="button" class="btn">
+				          				REQUEST AN INVITE
+				          			</button> <!-- end of btn -->
+				          		</li>          		
+				          	</ul>
+				          </div> <!-- end of col-xs-3 col-xs-offset-3 -->
+
+				 </div> <!-- end of navigation-header -->
+
+		      </div> <!-- end of row -->
+
+		 </div> <!-- end of container -->
+
+
+		<!-- COMPONENT: SpacerXXL-->
+		<div class='spacerXXL'>
+			
+		</div>
+
+
+		<!-- COMPONENT: Header-Primary --> 
+		<h1 class="header-primary text-center">
+		  header primary works!
+		</h1>
+
+
+		<!-- COMPONENT: SpacerSM-->
+		<div class='spacerSM'>
+			
+		</div>
+
+
+		<!-- COMPONENT: Description-Primary --> 
+		<p class="description-primary text-center">
+		  description primary works!
+		</p>
+
+
+		<!-- COMPONENT: SpacerSM-->
+		<div class='spacerMD'>
+			
+		</div>
+
+
+		<!-- COMPONENT: CTA-Search  -->
+		<div class="container">
+
+			<div class="row">
+
+		        <div class="col-md-6 object-center">
+
+		            <div id="custom-search-input">
+
+		                <div class="input-group col-md-12">
+
+		                    <input type="text" class="form-control input-lg" placeholder="Buscar" />
+
+		                    <span class="input-group-btn">
+
+		                        <button class="btn btn-info btn-lg" type="button">
+		                            Sign Up
+		                        </button>
+
+		                    </span>
+
+		                </div> <!-- end of input-group -->
+
+		            </div><!-- end of custom-search-input -->
+
+		        </div><!-- end of col-md-6 -->
+
+			</div> <!-- end of row -->
+
+		</div> <!-- end of container -->
+
+
+		<!-- COMPONENT: SpacerXS-->
+		<div class='spacerXS'>
+			
+		</div>
+
+
+		<!-- COMPONENT: CTA-Learn-More  -->
+		<div class="container text-center">
+
+			<label for="">Learn More</label>
+
+			 <i class="glyphicon glyphicon-chevron-down"></i>
+
+		 </div>
+
+
+		 <!-- COMPONENT: SpacerXXL-->
+		<div class='spacerXXL'>
+			
+		</div>
+
+		 <!-- COMPONENT: Content Calendar --> 
+		 <div class="container">
+		 	<div class="row">
+		 		<div class="col-md-12"></div>
+		 		<img class="img-responsive" [src]="content_calendar">
+		 	</div> <!-- end of row -->
+		</div> <!-- end of container -->
+
+</div><!-- end of container-primary -->
+
+ <div [ngClass]="{true: 'spacerMD'}[spacer_add]"></div>
+
+ <!-- COMPONENT: Container Secondary --> 
+ <div class="container-secondary">
+
+	 	<section class="testimonials" id="testimonials">
+		
+		<div class="container">
+			
+			<div class="row">
+				
+				<div class="col-sm-6">
+					
+					<div class="testimonial">
+						
+						<p class="quote">“It's is a no-brainer for any company looking to scale with smart content delivered seamlessly into your business ecosystem. I <strong>highly</strong> recommend them and am very grateful for the huge impact they’ve made with our startup.”</p>
+						
+						<div class="person clearfix">
+							<img src="http://opscalendar.com/wp-content/themes/opscalendar/images/russ-perry.png" alt="Design Pickle" class="testimonial-person">
+							<div class="text">
+								<span class="person-name">Russ Perry</span>
+								<span class="person-title">Founder, Design Pickle</span>
+							</div><!--/ .text-->
+						</div><!--/ .person-->
+						
+					</div><!--/ .testimonial-->
+				
+				</div><!--/ .col-sm-6 -->
+
+				<div [ngClass]="{true: 'spacerSM'}[spacer_add]"></div>
+				
+				<div class="col-sm-6">
+					
+					<div class="testimonial">
+						
+						<p class="quote">“Our traffic has increased 32% since we started. But the biggest benefit for me has been freeing up my time to focus on our product. The quality has been great too, and a hit with our customers.”</p>
+						
+						<div class="person clearfix">
+							<img src="http://opscalendar.com/wp-content/themes/opscalendar/images/josh-ledgard.png" alt="Josh Ledgard, Kickoff Labs" class="testimonial-person">
+							<div class="text">
+								<span class="person-name">Josh Ledgard</span>
+								<span class="person-title">Co-Founder, KickoffLabs</span>
+							</div><!--/ .text-->
+						</div><!--/ .person-->
+						
+					</div><!--/ .testimonial-->
+				
+				</div><!--/ .col-sm-6 -->
+				
+			</div><!--/ .row-->
+			
+		</div><!--/ .container-->
+		
+	</section><!-- end of testimonials -->
+
+ </div> <!-- end of container-secondary -->
+
+ <div [ngClass]="{true: 'spacerMD'}[spacer_add]"></div>
+
+ <!-- COMPONENT: Container Primary --> 
+ <div class="container-primary container-odd">
+
+	 <!-- Header-Primary  -->
+	 <div class="container">
+	 	<div class=row>
+	 		<div class="col-md-12">
+	 		 	<div [ngClass]="{true: 'spacerMD'}[spacer_add]"></div>
+				<h1 class="header-primary text-center">
+				  fasdfheader primary works!
+				</h1> <!-- end of header-primary -->
+			</div> <!-- end of col-md-12 -->
+		</div> <!-- end of row -->
+	</div> <!-- end of container -->
+
+	 <!-- COMPONENT: Description-Primary  -->
+	 <div class="container">
+	 	<div class=row>
+	 		<div class="col-md-12">
+				<p class="description-primary text-center">
+				   description works!
+				</p> <!-- end of description-primary -->
+			</div> <!-- end of col-md-12 -->
+		</div> <!-- end of row -->
+	</div> <!-- end of container -->
+
+	<!-- COMPONENT: SpacerSM-->
+	<div class='spacerMD'>
+			
+	</div> <!-- end of spacerSM -->
+
+	<div class="container object-center">
+		<div class="row">
+			<div class="col-md-3">
+				<img [ngClass]="{true: 'object-center', false: 'object-center'}[object_center_remove]"[src]="dummy">
+				<!-- COMPONENT: Description-Secondary --> 
+				<p class="description-secondary text-center">
+				  description secondary works!
+				</p>
+				<div [ngClass]="{true: 'spacerSM'}[spacer_add]"></div>
+
+			</div>
+			<div class="col-md-3">
+				<img [ngClass]="{true: 'object-center', false: 'object-center'}[object_center_remove]" [src]="dummy">
+				<!-- COMPONENT: Description-Secondary --> 
+				<p class="description-secondary text-center">
+				  description secondary works!
+				</p>
+				<div [ngClass]="{true: 'spacerSM'}[spacer_add]"></div>
+
+			</div>
+			<div class="col-md-3">
+				<img [ngClass]="{true: 'object-center', false: 'object-center'}[object_center_remove]" [src]="dummy">
+				<p class="description-secondary text-center">
+				  description secondary works!
+				</p>
+				<div [ngClass]="{true: 'spacerSM'}[spacer_add]"></div>
+
+			</div>
+			<div class="col-md-3">
+				<img [ngClass]="{true: 'object-center', false: 'object-center'}[object_center_remove]"[src]="dummy">
+				<p class="description-secondary text-center">
+				  description secondary works!
+				</p>
+				<div [ngClass]="{true: 'spacerSM'}[spacer_add]"S></div>
+
+			</div>
+		</div> <!-- end of row -->
+	</div> <!-- end of container -->
+
+ </div><!-- end of container-primary --> 
+
+<div [ngClass]="{true: 'spacerMD'}[spacer_add]"></div>
+
+ <div class="container-secondary">
+ 	<div class="container">
+ 		<div class="row">
+ 			
+ 			<div class="col-md-6">
+ 				<!-- COMPONENT: Header-Secondary  -->
+				<h2 class="header-secondary">
+				  fasdfsdf header secondary works!
+				</h2>
+				<!-- COMPONENT: SpacerSM-->
+				<div class='spacerSM'>
+				</div> <!-- end of spacerSM -->
+				<!-- COMPONENT: Description-Secondary --> 
+				<p class="description-secondary">
+				  description secondary works!
+				</p>
+ 			</div> <!-- end of col-md-6 -->
+
+
+			<div class="col-md-6">
+				<img class="logo img-responsive" [src]="content_calendar_feature">
+ 			</div> <!-- end of col-md-6 -->
+ 		</div><!-- end of row -->
+
+ 	</div><!-- end of container -->
+ </div><!-- end of container-secondary --> 
+
+
+ <!-- COMPONENT: SpacerSM-->
+ <div [ngClass]="{true: 'spacerMD'}[spacer_add]">
+ 	
+ </div>
+<!-- end of spacerSM -->
+
+ <div class="container-secondary">
+ 	<div class="container">
+ 		<div class="row">
+
+			<div *ngIf="mobile"  class="col-md-6">
+				<!-- COMPONENT: Header-Secondary  -->
+				<h2 class="header-secondary">
+				  22212345header secondary works!
+				</h2>
+				<!-- COMPONENT: SpacerSM-->
+				<div class='spacerSM'>
+				</div> <!-- end of spacerSM -->
+				<!-- COMPONENT: Description-Secondary --> 
+				<p class="description-secondary">
+				  description secondary works!
+				</p>
+ 			</div> <!-- end of col-md-6 -->
+
+
+ 			<div class="col-md-6">
+ 				<img class="logo img-responsive" [src]="content_calendar_feature">
+ 			</div> <!-- end of col-md-6 -->
+			
+
+			<div *ngIf="desktop" class="col-md-6">
+				<!-- COMPONENT: Header-Secondary  -->
+				<h2 class="header-secondary">
+				  33312345header secondary works!
+				</h2>
+				<!-- COMPONENT: SpacerSM-->
+				<div class='spacerSM'>
+				</div> <!-- end of spacerSM -->
+				<!-- COMPONENT: Description-Secondary --> 
+				<p class="description-secondary">
+				  description secondary works!
+				</p>
+ 			</div> <!-- end of col-md-6 -->
+
+ 		</div><!-- end of row -->
+ 	</div><!-- end of container -->
+ </div><!-- end of container-secondary --> 
+
+ <div [ngClass]="{true: 'spacerLG', false: 'spacerLG' }[spacer_add]"></div>
+
+ <!--  COMPONENT: Container Secondary -->
+ <div class="container-secondary container-odd">
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<!-- COMPONENT: Header-Primary  -->
+				<h1 class="header-primary text-center">
+				 Your Workflow is Scared. Don't Disrupt it!
+				</h1><!-- end of header-primary -->
+				<div [ngClass]="{true: 'spacerMD', false: 'spacerMD' }[spacer_add]"></div>
+			</div> <!-- end of col-md-12 -->
+		</div> <!-- end of row -->
+	</div> <!-- end of container -->
+
+	<div [ngClass]="{true: 'spacerLG', false: 'spacerLG' }[spacer_add]"></div>
+
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-5">
+				<!-- COMPONENT: Description-Secondary --> 
+				<p class="description-secondary" >
+				 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				</p>
+				<div [ngClass]="{true: 'spacerMD', false: 'spacerMD' }[spacer_add]"></div>
+			</div> <!-- end of col-md-6 -->
+
+			<div class="col-md-offset-1 col-md-6">
+				<!-- COMPONENT: Description-Secondary --> 
+				<img class="logo img-responsive img-unorderedList-right" [src]="smile_face">
+				<p class="description-secondary description-secondary-unorderedList">
+				 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				</p>
+				<div [ngClass]="{true: 'spacerMD', false: 'spacerSM' }[spacer_add]"></div>
+				<!-- COMPONENT: Description-Secondary --> 
+				<img class="logo img-responsive img-unorderedList-right" [src]="smile_face">
+				<p class="description-secondary description-secondary-unorderedList">
+				 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				</p>
+				<div [ngClass]="{true: 'spacerMD', false: 'spacerMD' }[spacer_add]"></div>
+				<!-- COMPONENT: Description-Secondary --> 
+				<img class="logo img-responsive img-unorderedList-right" [src]="smile_face">
+				<p class="description-secondary description-secondary-unorderedList">
+				 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				</p>
+				<div [ngClass]="{true: 'spacerMD', false: 'spacerMD' }[spacer_add]"></div>
+
+			</div> <!-- end of col-md-6 -->			
+	
+		</div> <!-- end of row -->
+	</div> <!-- end of container -->
+
+
+ </div> <!-- end of container-secondary -->
+
+

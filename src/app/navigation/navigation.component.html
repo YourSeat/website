@@ -1,0 +1,57 @@
+
+<div class="container">
+
+      <div class="row">
+
+      	<div class="spacerXLG navigation-header">
+
+		          <div class="col-lg-7 col-md-6">
+		              <img class="logo" [src]="logo">
+		              <img (click)="show = !show" class="image-show-mobile float-right hamburger" [src]="hamburger"> 
+		          </div> <!-- end of col-xs-1 -->
+
+		          <div class="col-lg-5 col-md-6 navigation-links navigation-links-hidden">
+		          	<ul class="">
+		          		<li><a href="">HOW IT WORKS</a></li>
+		          		<li><a href="">PRICING</a></li>
+		          		<li>
+		          			<button type="button" class="btn">
+		          				LOGIN
+		          			</button> <!-- end of btn -->
+		          		</li>
+		          		<li>
+		          			<button type="button" class="btn">
+		          				REQUEST AN INVITE
+		          			</button> <!-- end of btn -->
+		          		</li>          		
+		          	</ul>
+		          </div> <!-- end of col-xs-3 col-xs-offset-3 -->
+
+
+				<div *ngIf="show" class="col-lg-5 navigation-links">
+		          	<ul class="">
+		          		<li><a href="">HOW IT WORKS</a></li>
+		          		<li><a href="">PRICING</a></li>
+		          		<li>
+		          			<button type="button" class="btn">
+		          				LOGIN
+		          			</button> <!-- end of btn -->
+		          		</li>
+		          		<li>
+		          			<button type="button" class="btn">
+		          				REQUEST AN INVITE
+		          			</button> <!-- end of btn -->
+		          		</li>          		
+		          	</ul>
+		          </div> <!-- end of col-xs-3 col-xs-offset-3 -->
+
+		 </div> <!-- end of navigation-header -->
+
+      </div> <!-- end of row -->
+
+ </div> <!-- end of container-fluid -->
+
+<br>
+
+ 
+ 
