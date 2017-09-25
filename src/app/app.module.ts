@@ -26,7 +26,8 @@ import { EarlyAccessComponent } from './pages/early-access/early-access.componen
 import { ComponentLibraryComponent } from './pages/component-library/component-library.component';
 
 //Services
-import { ImagesComponent } from './images/images.component'
+import { ImagesComponent } from './images/images.component';
+import { HomePhoneComponent } from './pages/home/home-phone/home-phone.component'
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { ImagesComponent } from './images/images.component'
     AboutComponent,
     EarlyAccessComponent,
     ComponentLibraryComponent,
-    ImagesComponent
+    ImagesComponent,
+    HomePhoneComponent
   ],
   imports: [
     BrowserModule,

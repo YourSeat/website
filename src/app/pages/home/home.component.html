@@ -318,19 +318,9 @@
  	<div class="container">
  		<div class="row">
 
-			<div *ngIf="mobile"  class="col-md-6">
-				<!-- COMPONENT: Header-Secondary  -->
-				<h2 class="header-secondary">
-				  22212345header secondary works!
-				</h2>
-				<!-- COMPONENT: SpacerSM-->
-				<div class='spacerSM'>
-				</div> <!-- end of spacerSM -->
-				<!-- COMPONENT: Description-Secondary --> 
-				<p class="description-secondary">
-				  description secondary works!
-				</p>
- 			</div> <!-- end of col-md-6 -->
+			<div *ngIf="mobile">  
+				<app-home-phone></app-home-phone>
+	 		</div><!-- end of *ngIf="mobile" -->
 
 
  			<div class="col-md-6">
