@@ -1,0 +1,18 @@
+<label for="">Email</label>
+<input id="email" [(ngModel)]="email" type="text"> 
+
+<label for="">Password</label>
+<input id="password" [(ngModel)]="password" type="text"> 
+
+<button (click)="login(email, password)">Login</button>
+
+
+<div *ngIf="show">
+	<label for="">Submit Text</label>
+	<input type="text" id="submittedData" [(ngModel)]="submittedData">
+	<button (click)="submittedData()">Submit Data</button>
+	<br>
+
+	<label for="">Display Text</label>
+	{{displayText}}
+</div>

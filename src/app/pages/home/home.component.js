@@ -14,9 +14,10 @@ var core_1 = require("@angular/core"), HomeComponent = function() {
     function e(e) {
         var t = this;
         this.ngZone = e, this.object_center_remove = !1, this.spacer_add = !1, this.mobile = !1, 
-        this.desktop = !0, this.tablet = !1, this.dummy = "/assets/images/Logo.png", this.hamburger = "/assets/images/hamburger.png", 
-        this.content_calendar = "/assets/images/content-calendar.png", this.content_calendar_feature = "/assets/images/content-calendar-feature.png", 
-        this.smile_face = "/assets/images/Logo.png", window.onresize = function(o) {
+        this.desktop = !0, this.tablet = !1, this.desktopData = "desktop data", this.dummy = "/assets/images/Logo.png", 
+        this.hamburger = "/assets/images/hamburger.png", this.content_calendar = "/assets/images/content-calendar.png", 
+        this.content_calendar_feature = "/assets/images/content-calendar-feature.png", this.smile_face = "/assets/images/Logo.png", 
+        window.onresize = function(o) {
             e.run(function() {
                 t.width = window.innerWidth, t.width <= 479 ? (console.log("479 it is!!!!"), t.object_center_remove = !0, 
                 t.spacer_add = !0, t.mobile = !0, console.log("1:" + t.mobile), t.desktop = !1, 

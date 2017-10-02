@@ -84,7 +84,7 @@
 		</div>
 
 
-		<!-- COMPONENT: CTA-Search  -->
+		<!-- COMPONENT: CTA-SignUp  -->
 		<div class="container">
 
 			<div class="row">
@@ -95,11 +95,11 @@
 
 		                <div class="input-group col-md-12">
 
-		                    <input type="text" class="form-control input-lg" placeholder="Buscar" />
+		                    <input #userName type="text" class="form-control input-lg" placeholder="Buscar" />
 
 		                    <span class="input-group-btn">
 
-		                        <button class="btn btn-info btn-lg" type="button">
+		                        <button (click)="signUp(userName.value)" class="btn btn-info btn-lg" type="button">
 		                            Sign Up
 		                        </button>
 
@@ -131,6 +131,22 @@
 
 		 </div>
 
+		 <!-- COMPONENT: SpacerXXL-->
+		 <div class='spacerLG'>
+				
+		</div>
+
+		 <!-- COMPONENT: Header-Secondary  -->
+		<div *ngIf="showSignUpComplete" class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="header-secondary text-center">
+						Thanks for signing up {{userNames}}
+					</h2>
+				</div><!--end of col-md-12 -->
+			</div><!--end of row -->
+		</div> <!-- end of container -->
+  		<!-- end of header-secondary -->
 
 		 <!-- COMPONENT: SpacerXXL-->
 		<div class='spacerXXL'>

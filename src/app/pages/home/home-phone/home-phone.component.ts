@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home-phone',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-phone.component.css']
 })
 export class HomePhoneComponent implements OnInit {
+
+ 
 
   constructor() { }
 

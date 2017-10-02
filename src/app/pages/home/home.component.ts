@@ -1,5 +1,5 @@
 import { Component, OnInit, NgZone } from '@angular/core';
-
+import { CtaComponent } from '../../cta/cta.component';
 
 @Component({
   selector: 'app-home',
@@ -17,43 +17,48 @@ import { Component, OnInit, NgZone } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  dummy
-  hamburger
-  content_calendar
-  content_calendar_feature
-  smile_face
-  width
-  height
-  object_center_remove = false
-  spacer_add = false
-  mobile = false
-  desktop = true
-  tablet = false 
+  dummy;
+  hamburger;
+  content_calendar;
+  content_calendar_feature;
+  smile_face;
+  width;
+  height;
+  object_center_remove = false;
+  spacer_add = false;
+  mobile = false;
+  desktop = true;
+  tablet = false;
+  showSignUpComplete = false
+
+  userNames = 'frank';
+
+  desktopData = 'desktop data';
 
 
-  constructor(private ngZone:NgZone) { 
-     this.dummy = '/assets/images/Logo.png'
-     this.hamburger = '/assets/images/hamburger.png'
-     this.content_calendar = '/assets/images/content-calendar.png'
-     this.content_calendar_feature = '/assets/images/content-calendar-feature.png'
-     this.smile_face = '/assets/images/Logo.png'
-
+  constructor(private ngZone:NgZone, private CtaComponent: CtaComponent) { 
+     this.dummy = '/assets/images/Logo.png';
+     this.hamburger = '/assets/images/hamburger.png';
+     this.content_calendar = '/assets/images/content-calendar.png';
+     this.content_calendar_feature = '/assets/images/content-calendar-feature.png';
+     this.smile_face = '/assets/images/Logo.png';
+ 
    window.onresize = (e) =>
     {
         ngZone.run(() => {
             this.width = window.innerWidth;
             if (this.width <= 479){
-                console.log('479 it is!!!!')
-                this.object_center_remove = true
-                this.spacer_add = true
-                this.mobile = true
-                console.log("1:" + this.mobile)
-                this.desktop = false
-                 console.log("1:" + this.desktop)
+                console.log('479 it is!!!!');
+                this.object_center_remove = true;
+                this.spacer_add = true;
+                this.mobile = true;
+                console.log("1:" + this.mobile);
+                this.desktop = false;
+                 console.log("1:" + this.desktop);
             }
             else if (this.width > 479){
-                this.desktop = true
-                this.mobile = false
+                this.desktop = true;
+                this.mobile = false;
             }
 
         });
@@ -65,16 +70,25 @@ export class HomeComponent implements OnInit {
             this.width = window.innerWidth;
              if (this.width <= 479){
                 console.log('479 it is!!!!')
-                this.object_center_remove = true
-                this.spacer_add = true
-                this.mobile = true
+                this.object_center_remove = true;
+                this.spacer_add = true;
+                this.mobile = true;
                 this.desktop = false;
             }
             else if (this.width > 479){
-                this.desktop = true
-                this.mobile = false
+                this.desktop = true;
+                this.mobile = false;
             }
 
   }
+
+  signUp(userName) {
+   this.userNames = this.CtaComponent.cta_signUp(userName);
+   // assuming no validation is required. otherwise, a more asynchronous
+   // approach would be used to unhide information
+   this.showSignUpComplete = true;
+  }
+
+
 
 }
